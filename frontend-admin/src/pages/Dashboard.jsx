@@ -5,7 +5,8 @@ import { Calendar, Pill, Activity, Bell, LogOut, LayoutDashboard, Clock, Check, 
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Ensure backend URL is correct
-const socket = io('http://localhost:8000');
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const socket = io(API_URL);
 
 const Dashboard = ({ onLogout }) => {
   const [activeTab, setActiveTab] = useState('overview'); 
