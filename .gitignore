@@ -12,3 +12,8 @@ build/
 
 # Logs
 *.log
+
+info.txt
+seed_render.py
+seed_doctor.py
+seed_staff.py
